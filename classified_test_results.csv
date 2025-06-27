@@ -1,0 +1,150 @@
+Feedback,Category,Department,Year,Gender,Predicted_Category
+Hostel food quality is poor.,Facilities,ME,1st Year,Male,Canteen
+Teachers rarely respond to student queries.,Academics,IT,4th Year,Other,Academics
+Restrooms are not maintained properly.,Facilities,CSE,2nd Year,Male,Facilities
+Exams are too difficult without proper guidance.,Academics,CSE,4th Year,Female,Academics
+The canteen staff is rude.,Canteen,ECE,1st Year,Male,Canteen
+Food quality has deteriorated.,Canteen,ME,2nd Year,Other,Canteen
+Mock interviews are not organized.,Placement,CSE,2nd Year,Other,Placement
+Hostel warden is unapproachable.,Hostel,CE,3rd Year,Female,Hostel
+There is no proper signage in the building.,Facilities,CSE,1st Year,Male,Facilities
+Administrative staff are not cooperative.,Administration,CSE,3rd Year,Male,Administration
+Workshops are irrelevant to current industry trends.,Placement,CE,1st Year,Other,Academics
+Lectures are too fast to follow.,Academics,IT,3rd Year,Female,Academics
+Forms take too long to get approved.,Administration,ME,3rd Year,Female,Administration
+Hostel cleanliness is not up to the mark.,Hostel,ME,2nd Year,Female,Hostel
+Forms take too long to get approved.,Administration,CSE,2nd Year,Female,Administration
+There is no proper signage in the building.,Facilities,ECE,1st Year,Other,Facilities
+The Wi-Fi is unreliable and slow.,Facilities,ME,2nd Year,Other,Facilities
+The canteen is not hygienic.,Canteen,ME,1st Year,Other,Canteen
+Not enough companies visit the campus.,Placement,CSE,3rd Year,Female,Placement
+Not enough companies visit the campus.,Placement,IT,3rd Year,Female,Placement
+Restrooms are not maintained properly.,Facilities,EEE,2nd Year,Male,Facilities
+The canteen staff is rude.,Canteen,ECE,2nd Year,Female,Canteen
+There is no proper signage in the building.,Facilities,CE,4th Year,Female,Facilities
+Soft skill training is missing.,Placement,CSE,2nd Year,Male,Academics
+There is no variety in the menu.,Canteen,ME,4th Year,Female,Canteen
+Workshops are irrelevant to current industry trends.,Placement,EEE,4th Year,Male,Academics
+There is no proper signage in the building.,Facilities,CE,4th Year,Other,Facilities
+Placement cell does not provide updates.,Placement,ECE,2nd Year,Other,Placement
+Workshops are irrelevant to current industry trends.,Placement,IT,4th Year,Female,Academics
+Hostel warden is unapproachable.,Hostel,EEE,1st Year,Other,Hostel
+Teachers rarely respond to student queries.,Academics,IT,1st Year,Female,Academics
+Rooms are cramped and not ventilated.,Hostel,EEE,1st Year,Male,Hostel
+The canteen is not hygienic.,Canteen,CSE,4th Year,Other,Canteen
+No practical sessions for theory subjects.,Academics,CSE,1st Year,Other,Academics
+The canteen staff is rude.,Canteen,ME,3rd Year,Male,Canteen
+Food quality has deteriorated.,Canteen,ECE,3rd Year,Other,Canteen
+Workshops are irrelevant to current industry trends.,Placement,ME,4th Year,Other,Academics
+There is no proper signage in the building.,Facilities,EEE,3rd Year,Female,Facilities
+Food quality has deteriorated.,Canteen,IT,2nd Year,Other,Canteen
+The library is overcrowded during exams.,Facilities,ECE,3rd Year,Male,Facilities
+Lectures are too fast to follow.,Academics,EEE,4th Year,Other,Academics
+Soft skill training is missing.,Placement,IT,1st Year,Male,Academics
+Workshops are irrelevant to current industry trends.,Placement,CE,2nd Year,Male,Academics
+Prices in the canteen are too high.,Canteen,CSE,1st Year,Female,Canteen
+The canteen is not hygienic.,Canteen,ME,4th Year,Other,Canteen
+Hostel warden is unapproachable.,Hostel,CSE,3rd Year,Other,Hostel
+The admin office is often closed early.,Administration,EEE,3rd Year,Other,Administration
+The AC in the lab doesn't work.,Facilities,IT,1st Year,Female,Facilities
+Lectures are well-structured and informative.,Academics,ME,4th Year,Female,Academics
+The canteen staff is rude.,Canteen,ME,4th Year,Female,Canteen
+The Wi-Fi is unreliable and slow.,Facilities,EEE,1st Year,Other,Facilities
+The canteen staff is rude.,Canteen,CSE,1st Year,Male,Canteen
+Soft skill training is missing.,Placement,CSE,4th Year,Male,Academics
+Prices in the canteen are too high.,Canteen,ECE,4th Year,Female,Canteen
+There is a delay in issuing certificates.,Administration,IT,1st Year,Other,Administration
+The Wi-Fi is unreliable and slow.,Facilities,CE,2nd Year,Male,Facilities
+There is a delay in issuing certificates.,Administration,CSE,2nd Year,Female,Administration
+Lectures are too fast to follow.,Academics,CE,3rd Year,Female,Academics
+Hostel cleanliness is not up to the mark.,Hostel,EEE,2nd Year,Female,Hostel
+The library is overcrowded during exams.,Facilities,CE,1st Year,Female,Facilities
+Scholarship process is very slow.,Administration,CSE,1st Year,Female,Administration
+The canteen is not hygienic.,Canteen,CSE,3rd Year,Male,Canteen
+Hostel food quality is poor.,Facilities,EEE,4th Year,Other,Canteen
+Lectures are well-structured and informative.,Academics,CSE,3rd Year,Other,Academics
+Prices in the canteen are too high.,Canteen,CE,4th Year,Male,Canteen
+Laundry services are not regular.,Hostel,IT,2nd Year,Other,Hostel
+Restrooms are not maintained properly.,Facilities,CSE,4th Year,Male,Facilities
+Mock interviews are not organized.,Placement,CE,4th Year,Male,Placement
+The library is overcrowded during exams.,Facilities,EEE,1st Year,Male,Facilities
+Food quality has deteriorated.,Canteen,ME,4th Year,Male,Canteen
+Scholarship process is very slow.,Administration,ECE,2nd Year,Male,Administration
+The admin office is often closed early.,Administration,ME,2nd Year,Other,Administration
+Water supply is inconsistent in the hostel.,Hostel,ECE,2nd Year,Female,Hostel
+Rooms are cramped and not ventilated.,Hostel,ME,4th Year,Other,Hostel
+Lectures are too fast to follow.,Academics,IT,4th Year,Other,Academics
+The AC in the lab doesn't work.,Facilities,IT,4th Year,Female,Facilities
+Workshops are irrelevant to current industry trends.,Placement,IT,1st Year,Male,Academics
+Soft skill training is missing.,Placement,ME,3rd Year,Other,Academics
+Not enough companies visit the campus.,Placement,CE,4th Year,Other,Placement
+Food quality has deteriorated.,Canteen,CSE,2nd Year,Female,Canteen
+Scholarship process is very slow.,Administration,ME,1st Year,Male,Administration
+Prices in the canteen are too high.,Canteen,CE,2nd Year,Male,Canteen
+Water supply is inconsistent in the hostel.,Hostel,CSE,2nd Year,Male,Hostel
+Not enough companies visit the campus.,Placement,EEE,2nd Year,Female,Placement
+There is a delay in issuing certificates.,Administration,EEE,1st Year,Male,Administration
+The library is overcrowded during exams.,Facilities,ECE,4th Year,Other,Facilities
+Hostel food quality is poor.,Facilities,CE,1st Year,Male,Canteen
+Exams are too difficult without proper guidance.,Academics,EEE,1st Year,Other,Academics
+Mock interviews are not organized.,Placement,CE,1st Year,Male,Placement
+Workshops are irrelevant to current industry trends.,Placement,IT,2nd Year,Other,Academics
+The canteen is not hygienic.,Canteen,CSE,2nd Year,Other,Canteen
+Prices in the canteen are too high.,Canteen,EEE,1st Year,Male,Canteen
+Hostel warden is unapproachable.,Hostel,ME,4th Year,Male,Hostel
+Laundry services are not regular.,Hostel,ME,1st Year,Male,Hostel
+Not enough companies visit the campus.,Placement,CSE,4th Year,Other,Placement
+The admin office is often closed early.,Administration,CSE,2nd Year,Female,Administration
+Rooms are cramped and not ventilated.,Hostel,CE,2nd Year,Female,Hostel
+There is no proper signage in the building.,Facilities,CSE,4th Year,Female,Facilities
+Food quality has deteriorated.,Canteen,CE,1st Year,Other,Canteen
+Placement cell does not provide updates.,Placement,ECE,3rd Year,Female,Placement
+Lectures are well-structured and informative.,Academics,CE,4th Year,Other,Academics
+The admin office is often closed early.,Administration,CE,3rd Year,Other,Administration
+Professors are knowledgeable and helpful.,Academics,ME,4th Year,Female,Academics
+Forms take too long to get approved.,Administration,ECE,4th Year,Male,Administration
+Mock interviews are not organized.,Placement,IT,3rd Year,Other,Placement
+The admin office is often closed early.,Administration,ECE,3rd Year,Other,Administration
+Course material is outdated.,Academics,CSE,2nd Year,Female,Academics
+The canteen staff is rude.,Canteen,ECE,4th Year,Female,Canteen
+Laundry services are not regular.,Hostel,EEE,3rd Year,Other,Hostel
+Administrative staff are not cooperative.,Administration,ME,3rd Year,Male,Administration
+Food quality has deteriorated.,Canteen,EEE,2nd Year,Male,Canteen
+There is no variety in the menu.,Canteen,ME,1st Year,Other,Canteen
+Lectures are well-structured and informative.,Academics,EEE,2nd Year,Other,Academics
+Food quality has deteriorated.,Canteen,ECE,3rd Year,Other,Canteen
+The canteen staff is rude.,Canteen,EEE,2nd Year,Male,Canteen
+Laundry services are not regular.,Hostel,CSE,3rd Year,Male,Hostel
+Rooms are cramped and not ventilated.,Hostel,EEE,2nd Year,Female,Hostel
+Forms take too long to get approved.,Administration,IT,3rd Year,Female,Administration
+The syllabus is not being covered on time.,Academics,IT,4th Year,Other,Academics
+Hostel food quality is poor.,Facilities,IT,4th Year,Other,Canteen
+Not enough companies visit the campus.,Placement,IT,1st Year,Female,Placement
+Lectures are well-structured and informative.,Academics,CSE,1st Year,Female,Academics
+Hostel food quality is poor.,Facilities,CE,4th Year,Other,Canteen
+Hostel cleanliness is not up to the mark.,Hostel,CE,4th Year,Other,Hostel
+Lectures are too fast to follow.,Academics,CE,2nd Year,Male,Academics
+Teachers rarely respond to student queries.,Academics,ME,2nd Year,Other,Academics
+Workshops are irrelevant to current industry trends.,Placement,EEE,4th Year,Male,Academics
+The canteen staff is rude.,Canteen,ECE,4th Year,Female,Canteen
+Hostel warden is unapproachable.,Hostel,CSE,4th Year,Other,Hostel
+Classrooms need better ventilation.,Facilities,ME,3rd Year,Female,Facilities
+Forms take too long to get approved.,Administration,CE,2nd Year,Female,Administration
+The canteen is not hygienic.,Canteen,CSE,3rd Year,Female,Canteen
+Rooms are cramped and not ventilated.,Hostel,ECE,4th Year,Male,Hostel
+Placement cell does not provide updates.,Placement,CSE,2nd Year,Other,Placement
+The admin office is often closed early.,Administration,ECE,2nd Year,Other,Administration
+Exams are too difficult without proper guidance.,Academics,EEE,3rd Year,Male,Academics
+No practical sessions for theory subjects.,Academics,IT,3rd Year,Other,Academics
+Restrooms are not maintained properly.,Facilities,ECE,1st Year,Other,Facilities
+The Wi-Fi is unreliable and slow.,Facilities,ME,3rd Year,Other,Facilities
+There is no variety in the menu.,Canteen,EEE,2nd Year,Male,Canteen
+Laundry services are not regular.,Hostel,CSE,4th Year,Other,Hostel
+Placement cell does not provide updates.,Placement,ECE,2nd Year,Female,Placement
+Laundry services are not regular.,Hostel,IT,3rd Year,Female,Hostel
+Soft skill training is missing.,Placement,ECE,1st Year,Other,Academics
+The admin office is often closed early.,Administration,ECE,2nd Year,Male,Administration
+There is no variety in the menu.,Canteen,IT,4th Year,Male,Canteen
+Laundry services are not regular.,Hostel,CSE,1st Year,Female,Hostel
+Hostel food quality is poor.,Facilities,CE,4th Year,Male,Canteen
+The canteen staff is rude.,Canteen,CE,4th Year,Male,Canteen
