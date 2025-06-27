@@ -1,0 +1,128 @@
+# Install necessary packages 
+!pip install datasets | tail -n 1
+!pip install scikit-learn | tail -n 1
+!pip install ibm-watson-machine-learning==1.0.312 | tail -n 1
+
+# Import necessary modules
+import os, getpass
+from pandas import read_csv
+
+# Set up IBM Watson Machine Learning credentials
+credentials = {
+    "url": "https://us-south.ml.cloud.ibm.com",
+    "apikey": getpass.getpass("Please enter your WML api key (hit enter): ")  # Securely get API key from user
+}
+
+# Get project_id from environment or prompt the user
+try:
+    project_id = os.environ["PROJECT_ID"]
+except KeyError:
+    project_id = input("Please enter your project_id (hit enter): ")
+
+project_id  #Displaying the project id
+
+# Set up IBM Cloud Object Storage client for file operations
+import os, types
+import pandas as pd
+from ibm_boto3 import client
+from botocore.client import Config
+import ibm_boto3
+
+# Patch method needed for pandas to work with COS response
+def _iter_(self): return 0
+
+# Create COS client with credentials and endpoint details
+cos_client = ibm_boto3.client(service_name='s3',
+    ibm_api_key_id='6LEotMK7CC1xteOCDukUVv3vX4bPIIthwr9Y_uYDgPsn',
+    ibm_auth_endpoint="https://iam.cloud.ibm.com/oidc/token",
+    config=Config(signature_version='oauth'),
+    endpoint_url='https://s3.us-south.cloud-object-storage.appdomain.cloud'
+)
+
+# Upload output CSV file (predictions) to COS
+cos_client.upload_file(
+    Filename="classified_test_results.csv",
+    Bucket='bucket-8nk84m5bztwxj10',
+    Key='classified_test_results.csv'
+)
+
+# Fetch and load training data from COS
+bucket = 'bucket-8nk84m5bztwxj10'
+object_key = 'college_feedback_train.csv'
+body = cos_client.get_object(Bucket=bucket, Key=object_key)['Body']
+if not hasattr(body, "_iter"): body.iter_ = types.MethodType(_iter_, body)
+train_data = pd.read_csv(body)
+train_data.head(5)  # Display first 5 rows
+
+# Fetch and load test data from COS
+object_key = 'college_feedback_test.csv'
+body = cos_client.get_object(Bucket=bucket, Key=object_key)['Body']
+if not hasattr(body, "_iter"): body.iter_ = types.MethodType(_iter_, body)
+test_data = pd.read_csv(body)
+test_data.head(5)  # Display first 5 rows
+
+# Show shapes of the datasets (rows, columns)
+train_data.shape
+test_data.shape
+
+# Import ModelTypes to select an appropriate foundation model
+from ibm_watson_machine_learning.foundation_models.utils.enums import ModelTypes
+print([model.name for model in ModelTypes])  # List available model types
+model_id = ModelTypes.FLAN_T5_XXL  # Use FLAN-T5-XXL model for text generation/classification
+
+# Instruction prompt for few-shot classification
+student_classification_instruction = """
+Classify the student feedback into one of the following categories:
+Academics, Facilities, Administration, Hostel, Canteen, Placement
+
+feedback: The syllabus is not being covered on time.
+category: Academics
+
+feedback: Hostel rooms are cramped and not ventilated.
+category: Hostel
+
+feedback: There is no variety in the canteen menu.
+category: Canteen
+
+feedback: Administrative staff are not cooperative.
+category: Administration
+
+feedback: Not enough companies visit the campus.
+category: Placement
+
+"""
+
+# Set model generation parameters
+from ibm_watson_machine_learning.metanames import GenTextParamsMetaNames as GenParams
+parameters = {
+    GenParams.MAX_NEW_TOKENS: 10  # Limit output to 10 tokens
+}
+
+# Instantiate foundation model with given credentials and project
+from ibm_watson_machine_learning.foundation_models import Model
+model = Model(
+    model_id=model_id,
+    params=parameters,
+    credentials=credentials,
+    project_id=project_id
+)
+
+# Generate predictions for test data
+import time
+results = []  # Store predicted categories
+comments = list(test_data.Feedback)  # Extract feedback column
+
+for feedback in comments:
+    # Construct prompt with example instructions + new feedback
+    prompt = f"{student_classification_instruction}feedback: {feedback}\ncategory:"
+    response = model.generate_text(prompt=prompt)  # Generate prediction using FLAN-T5-XXL model
+    results.append(response)  # Store result
+    time.sleep(0.6)  # Wait to avoid rate limiting
+
+# Append predicted results to test DataFrame and save to CSV
+test_data["Predicted_Category"] = results
+test_data.to_csv("classified_test_results.csv", index=False)  # Save output locally
+
+# (Optional) Show feedback and corresponding predictions
+comments
+results
